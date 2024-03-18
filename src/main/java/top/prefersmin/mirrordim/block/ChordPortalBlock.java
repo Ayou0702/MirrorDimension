@@ -31,6 +31,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.registries.ForgeRegistries;
+import top.prefersmin.mirrordim.MirrorDimension;
 import top.prefersmin.mirrordim.registry.PMBlocks;
 import top.prefersmin.mirrordim.registry.PMDimensions;
 import top.prefersmin.mirrordim.world.ChordPortalForcer;
@@ -186,7 +187,7 @@ public class ChordPortalBlock extends Block {
         public static final int MAX_WIDTH = 21;
         private static final int MIN_HEIGHT = 2;
         public static final int MAX_HEIGHT = 21;
-        private static final BlockBehaviour.StatePredicate FRAME = (state, getter, pos) -> state.is(Blocks.CRYING_OBSIDIAN);
+        private static final BlockBehaviour.StatePredicate FRAME = (state, getter, pos) -> state.is(MirrorDimension.frameBlock);
         private final LevelAccessor level;
         private final Direction.Axis axis;
         private final Direction rightDir;
