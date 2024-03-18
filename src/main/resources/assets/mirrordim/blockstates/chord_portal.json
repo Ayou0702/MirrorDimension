@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "axis=z": { "model": "mirrordim:block/chord_portal_ew" },
+        "axis=x": { "model": "mirrordim:block/chord_portal_ns" }
+    }
+}
